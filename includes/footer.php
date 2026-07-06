@@ -19,10 +19,10 @@
         <div class="footer-container footer-grid">
             <!-- Brand Info Column -->
             <div class="footer-col brand-info">
-                <h3>Mr.genieperfumes</h3>
+                <h3>Elixir & Co.</h3>
                 <p class="brand-pitch">Curating high-end luxury fragrances for men and women. Bringing you authentic signature scents designed for timeless beauty, elegance, and supreme confidence.</p>
                 <div class="footer-socials">
-                    <a href="https://www.instagram.com/mr.genieperfumes?igsh=MXhvd2wyeXloemVjOQ==" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
                     <a href="https://wa.me/919071233343" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
@@ -64,7 +64,7 @@
     <!-- Footer Bottom -->
     <div class="footer-bottom">
         <div class="footer-container">
-            <p class="copyright">&copy; <?= date('Y') ?> Mr.genieperfumes. All rights reserved. Designed for premium elegance.</p>
+            <p class="copyright">&copy; <?= date('Y') ?> Elixir & Co. All rights reserved. Designed for premium elegance.</p>
             <p>Designed & Developed by <a href="https://talvyyo.com" target="_blank">Talvyyo</a></p>
         </div>
     </div>

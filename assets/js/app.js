@@ -1,4 +1,4 @@
-// Mr.genieperfumes E-Commerce Script
+// Elixir & Co. E-Commerce Script
 
 // 1. Toast Notification Helper
 function showToast(type, text) {
@@ -355,7 +355,7 @@ function startPaymentSimulation(totalAmount, billingData) {
                 <span style="font-family: var(--font-heading); font-size: 1.8rem; font-weight: 700; letter-spacing: 2px;">
                     SECURE <span style="color: var(--color-gold);">PAY</span>
                 </span>
-                <p style="font-size: 0.75rem; color: var(--color-text-muted); margin-top: 5px;">MR.GENIEPERFUMES GATEWAY INTEGRATION</p>
+                <p style="font-size: 0.75rem; color: var(--color-text-muted); margin-top: 5px;">ELIXIR & CO. GATEWAY INTEGRATION</p>
             </div>
             
             <div class="payment-modal-amount">

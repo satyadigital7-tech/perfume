@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="light">
-    <title><?= isset($pageTitle) ? e($pageTitle) . " | Mr.genieperfumes" : "Mr.genieperfumes | Luxury Perfumes" ?></title>
+    <title><?= isset($pageTitle) ? e($pageTitle) . " | Elixir & Co." : "Elixir & Co. | Luxury Perfumes" ?></title>
     <meta name="description" content="<?= isset($metaDesc) ? e($metaDesc) : "Discover the art of luxury fragrance. Premium perfumes for men and women." ?>">
     
     <!-- Open Graph tags for SEO -->
-    <meta property="og:title" content="<?= isset($pageTitle) ? e($pageTitle) . " | Mr.genieperfumes" : "Mr.genieperfumes | Luxury Perfumes" ?>">
+    <meta property="og:title" content="<?= isset($pageTitle) ? e($pageTitle) . " | Elixir & Co." : "Elixir & Co. | Luxury Perfumes" ?>">
     <meta property="og:description" content="<?= isset($metaDesc) ? e($metaDesc) : "Discover the art of luxury fragrance. Premium perfumes for men and women." ?>">
     <meta property="og:type" content="website">
     <meta property="og:image" content="<?= BASE_URL ?>/assets/images/LOGO.png">
@@ -63,7 +63,7 @@
 
             <!-- Brand Logo -->
             <a href="<?= BASE_URL ?>/" class="brand-logo">
-                <img src="<?= BASE_URL ?>/assets/images/LOGO.png" alt="Mr. Genie Perfumes Logo" class="logo-img">
+                <img src="<?= BASE_URL ?>/assets/images/LOGO.png" alt="Elixir & Co. Logo" class="logo-img">
             </a>
 
             <!-- Live Search Bar -->
@@ -127,7 +127,7 @@
     <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
     <aside class="mobile-nav-drawer" id="mobile-nav-drawer">
         <div class="mobile-nav-header">
-            <span class="mobile-nav-logo">Mr. Genie Perfumes</span>
+            <span class="mobile-nav-logo">Elixir & Co.</span>
             <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close Menu">
                 <i class="fa-solid fa-xmark"></i>
             </button>

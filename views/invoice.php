@@ -44,7 +44,7 @@ $invoiceNum  = 'INV-' . strtoupper($order['order_id'] ?? str_pad($order['id'], 6
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invoice <?= htmlspecialchars($invoiceNum) ?> — Mr.Genie Perfumes</title>
+    <title>Invoice <?= htmlspecialchars($invoiceNum) ?> — Elixir & Co.</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -330,8 +330,8 @@ $invoiceNum  = 'INV-' . strtoupper($order['order_id'] ?? str_pad($order['id'], 6
         <!-- Header -->
         <div class="inv-header">
             <div class="inv-logo">
-                <img src="<?= $logoUrl ?>" alt="Mr.Genie Perfumes Logo">
-                <div class="brand-name">MR.GENIE PERFUMES</div>
+                <img src="<?= $logoUrl ?>" alt="Elixir & Co. Logo">
+                <div class="brand-name">ELIXIR & CO.</div>
                 <div class="brand-tagline">Luxury Fragrances</div>
             </div>
             <div class="inv-meta">
@@ -369,11 +369,11 @@ $invoiceNum  = 'INV-' . strtoupper($order['order_id'] ?? str_pad($order['id'], 6
             <div class="inv-address-block">
                 <h6>From — Seller</h6>
                 <p>
-                    <strong>Mr.Genie Perfumes</strong><br>
+                    <strong>Elixir & Co.</strong><br>
                     Luxury Fragrances & Perfumes<br>
                     India<br>
-                    support@mrgenieperfumes.in<br>
-                    mrgenieperfumes.in
+                    itsmyshopshahid838@gmail.com<br>
+                    elixircoperfumes.in
                 </p>
             </div>
             <div class="inv-address-block">
@@ -470,12 +470,12 @@ $invoiceNum  = 'INV-' . strtoupper($order['order_id'] ?? str_pad($order['id'], 6
             <div>
                 <div class="thank-you">Thank you for your order!</div>
                 <div style="font-size: 11px; color: #999; margin-top: 6px;">
-                    For queries, contact us at support@mrgenieperfumes.in
+                    For queries, contact us at itsmyshopshahid838@gmail.com
                 </div>
             </div>
             <div class="company-info">
-                <strong>Mr.Genie Perfumes</strong><br>
-                mrgenieperfumes.in<br>
+                <strong>Elixir & Co.</strong><br>
+                elixircoperfumes.in<br>
                 India
             </div>
         </div>

@@ -1,5 +1,5 @@
 /* ==========================================
-   MR.GENIEPERFUMES - LUXURY FRAGRANCES DESIGN SYSTEM
+   ELIXIR & CO. - LUXURY FRAGRANCES DESIGN SYSTEM
    ========================================== */
 
 /* 1. Global Setup & Custom Properties */
@@ -3190,4 +3190,541 @@ img {
         gap: 15px !important;
     }
 }
+
+/* ==========================================
+   ELIXIR & CO. HOMEPAGE REDESIGN STYLES
+   ========================================== */
+
+.elixir-home {
+    background-color: #0d0d0d;
+    color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 1. Hero Section */
+.elixir-hero {
+    background: #0d0d0d;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.elixir-hero .hero-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.elixir-hero-content {
+    padding-right: 20px;
+}
+
+.elixir-hero-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--color-gold, #c8a96e);
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.elixir-hero-separator {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.elixir-hero-separator::before,
+.elixir-hero-separator::after {
+    content: '';
+    height: 1px;
+    background: var(--color-gold, #c8a96e);
+    flex-grow: 1;
+    opacity: 0.5;
+}
+
+.elixir-hero-separator i {
+    color: var(--color-gold, #c8a96e);
+    font-size: 0.8rem;
+}
+
+.elixir-hero-tagline {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.elixir-hero-desc {
+    font-size: 1rem;
+    color: #a0a0a0;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.elixir-hero-ctas {
+    display: flex;
+    gap: 20px;
+}
+
+.elixir-btn-gold {
+    background: var(--color-gold, #c8a96e);
+    color: #0d0d0d !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 14px 28px;
+    border: 1px solid var(--color-gold, #c8a96e);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 0.85rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.elixir-btn-gold:hover {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: #0d0d0d !important;
+}
+
+.elixir-btn-outline {
+    background: transparent;
+    color: #ffffff !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 14px 28px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 0.85rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.elixir-btn-outline:hover {
+    border-color: var(--color-gold, #c8a96e);
+    color: var(--color-gold, #c8a96e) !important;
+}
+
+.elixir-hero-image-wrapper {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.elixir-hero-image-wrapper img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.8s ease;
+}
+
+.elixir-hero-image-wrapper:hover img {
+    transform: scale(1.03);
+}
+
+/* 2. Our Collection Section */
+.elixir-collection {
+    background-color: #f7f4ed;
+    color: #222222;
+    padding: 80px 0;
+}
+
+.elixir-section-subtitle {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #888888;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.elixir-section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #111111;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.elixir-title-decoration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.elixir-title-decoration::before,
+.elixir-title-decoration::after {
+    content: '';
+    width: 50px;
+    height: 1px;
+    background: var(--color-gold, #c8a96e);
+}
+
+.elixir-title-decoration i {
+    color: var(--color-gold, #c8a96e);
+    font-size: 0.7rem;
+}
+
+.elixir-collection-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.elixir-collection-card {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.elixir-collection-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.elixir-card-img-side {
+    position: relative;
+    overflow: hidden;
+}
+
+.elixir-card-img-side img {
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.elixir-card-info-side {
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #faf8f5;
+}
+
+/* Card 2 (Amber Noir) has dark theme info side */
+.elixir-collection-card.dark-theme-card .elixir-card-info-side {
+    background-color: #181818;
+    color: #ffffff;
+}
+
+.elixir-card-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.elixir-collection-card.dark-theme-card .elixir-card-name {
+    color: var(--color-gold, #c8a96e);
+}
+
+.elixir-card-tag {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #888888;
+    margin-bottom: 15px;
+}
+
+.elixir-collection-card.dark-theme-card .elixir-card-tag {
+    color: #aaaaaa;
+}
+
+.elixir-card-desc {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: #555555;
+    margin-bottom: 15px;
+}
+
+.elixir-collection-card.dark-theme-card .elixir-card-desc {
+    color: #cccccc;
+}
+
+.elixir-card-size {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #999999;
+    margin-bottom: 20px;
+}
+
+.elixir-btn-card {
+    background: #000000;
+    color: #ffffff !important;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 10px 18px;
+    border: none;
+    text-align: center;
+    transition: background 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.elixir-btn-card:hover {
+    background: var(--color-gold, #c8a96e);
+}
+
+.elixir-collection-card.dark-theme-card .elixir-btn-card {
+    background: var(--color-gold, #c8a96e);
+    color: #000000 !important;
+}
+
+.elixir-collection-card.dark-theme-card .elixir-btn-card:hover {
+    background: #ffffff;
+}
+
+/* 3. Our Story Section */
+.elixir-story-section {
+    background: #000000;
+    padding: 80px 0;
+    border-bottom: 1px solid #111111;
+}
+
+.elixir-story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.elixir-story-img-wrapper {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.elixir-story-img-wrapper img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.elixir-story-content {
+    padding-left: 20px;
+}
+
+.elixir-story-subtitle {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--color-gold, #c8a96e);
+    margin-bottom: 10px;
+}
+
+.elixir-story-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.elixir-story-desc {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: #a0a0a0;
+    margin-bottom: 35px;
+}
+
+/* 4. Features Bar */
+.elixir-features-bar {
+    background-color: #fcfaf6;
+    padding: 40px 0;
+    border-top: 1px solid #eae5d8;
+    border-bottom: 1px solid #eae5d8;
+}
+
+.elixir-features-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    text-align: center;
+}
+
+.elixir-feature-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.elixir-feature-icon {
+    font-size: 1.8rem;
+    color: var(--color-gold, #c8a96e);
+    margin-bottom: 15px;
+}
+
+.elixir-feature-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #111111;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.elixir-feature-desc {
+    font-size: 0.75rem;
+    color: #666666;
+    line-height: 1.5;
+}
+
+/* 5. Testimonials Section */
+.elixir-testimonials-section {
+    background: #0d0d0d;
+    padding: 80px 0;
+    border-bottom: 1px solid #1a1a1a;
+    position: relative;
+}
+
+.elixir-testimonials-container {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.elixir-testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.elixir-testimonial-card {
+    border-left: 1px solid rgba(200, 169, 110, 0.3);
+    padding-left: 30px;
+}
+
+.elixir-testimonial-stars {
+    color: var(--color-gold, #c8a96e);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.elixir-testimonial-text {
+    font-size: 0.95rem;
+    font-style: italic;
+    line-height: 1.8;
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+.elixir-testimonial-author {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-gold, #c8a96e);
+    font-weight: 600;
+}
+
+.elixir-carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.elixir-carousel-arrow:hover {
+    color: var(--color-gold, #c8a96e);
+}
+
+.elixir-arrow-prev {
+    left: -60px;
+}
+
+.elixir-arrow-next {
+    right: -60px;
+}
+
+/* Responsive Redesign Adjustments */
+@media (max-width: 1024px) {
+    .elixir-collection-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .elixir-hero .hero-grid,
+    .elixir-story-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .elixir-hero-content {
+        padding-right: 0;
+        text-align: center;
+    }
+    
+    .elixir-hero-brand {
+        font-size: 2.8rem;
+    }
+    
+    .elixir-hero-separator {
+        justify-content: center;
+    }
+    
+    .elixir-hero-ctas {
+        justify-content: center;
+    }
+    
+    .elixir-story-content {
+        padding-left: 0;
+        text-align: center;
+    }
+    
+    .elixir-features-flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .elixir-testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .elixir-carousel-arrow {
+        display: none;
+    }
+}
+
 

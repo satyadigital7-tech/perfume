@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "Page Not Found";
-$metaDesc = "The premium page you are looking for does not exist on Mr.genieperfumes.";
+$metaDesc = "The premium page you are looking for does not exist on Elixir & Co.";
 include __DIR__ . '/../includes/header.php';
 ?>
 

@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "Refund & Return Policy";
-$metaDesc = "Read Mr.genieperfumes' complete refund and return policy. Learn about our 7-day return window, refund process, and eligible conditions.";
+$metaDesc = "Read Elixir & Co.'s complete refund and return policy. Learn about our 7-day return window, refund process, and eligible conditions.";
 include __DIR__ . '/../includes/header.php';
 ?>
 
@@ -10,7 +10,7 @@ include __DIR__ . '/../includes/header.php';
         <h1>Refund &amp; Return Policy</h1>
         <p>Last updated: June 28, 2026</p>
 
-        <p>At <strong>Mr.genieperfumes</strong>, we are committed to delivering the finest luxury fragrances with complete customer satisfaction. If for any reason you are not fully satisfied with your purchase, please review our refund and return policy below.</p>
+        <p>At <strong>Elixir & Co.</strong>, we are committed to delivering the finest luxury fragrances with complete customer satisfaction. If for any reason you are not fully satisfied with your purchase, please review our refund and return policy below.</p>
 
         <h2>1. Eligibility for Returns</h2>
         <p>We accept returns within <strong>7 days</strong> of the delivery date, provided the following conditions are met:</p>
@@ -56,7 +56,7 @@ include __DIR__ . '/../includes/header.php';
         <p>Our team will respond within <strong>24–48 business hours</strong> and guide you through the return process.</p>
 
         <h2>6. Return Shipping</h2>
-        <p>For approved returns (excluding damaged/wrong items), the customer is responsible for return shipping costs. We recommend using a trackable courier service. Mr.genieperfumes is not responsible for items lost in transit during return shipment.</p>
+        <p>For approved returns (excluding damaged/wrong items), the customer is responsible for return shipping costs. We recommend using a trackable courier service. Elixir & Co. is not responsible for items lost in transit during return shipment.</p>
 
         <h2>7. Cancellations</h2>
         <p>Orders can be cancelled <strong>before they are dispatched</strong>. Once the order is shipped, cancellation is no longer possible — please initiate a return after delivery instead.</p>
@@ -68,7 +68,7 @@ include __DIR__ . '/../includes/header.php';
         <h2>9. Contact Us</h2>
         <p>If you have any questions about this Refund &amp; Return Policy, please reach out to us:</p>
         <ul>
-            <li><strong>Mr.genieperfumes</strong></li>
+            <li><strong>Elixir & Co.</strong></li>
             <li>Shakthi Garden, Kalyan Nagar, Nagarbhavi Main Road, Bangalore</li>
             <li>Email: itsmyshopshahid838@gmail.com</li>
             <li>Phone: +91 9071233343</li>

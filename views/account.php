@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "My Account";
-$metaDesc = "Register, login, or manage your personal details, order history, and addresses in the Mr.genieperfumes client lounge.";
+$metaDesc = "Register, login, or manage your personal details, order history, and addresses in the Elixir & Co. client lounge.";
 require_once __DIR__ . '/../config/db.php';
 
 // Handle Logout
@@ -87,7 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['form_action'])) {
                     $ins->execute([$fullName, $email, $mobile, $hashedPassword]);
                     
                     $_SESSION['user_id'] = $db->lastInsertId();
-                    $successMsg = 'Welcome to Mr.genieperfumes! Your account was created.';
+                    $successMsg = 'Welcome to Elixir & Co.! Your account was created.';
                     setFlashMessage('success', $successMsg);
                     $redirectTo = $_POST['redirect_to'] ?? '';
                     if (empty($redirectTo) || !(str_starts_with($redirectTo, '/') || str_starts_with($redirectTo, BASE_URL))) {
@@ -163,15 +163,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['form_action'])) {
                                 . '://' . $_SERVER['HTTP_HOST'] . BASE_URL . '/reset-password?token=' . $token;
 
                     $name    = $user['full_name'];
-                    $subject = "Your Password Reset OTP — Mr.Genie Perfumes";
+                    $subject = "Your Password Reset OTP — Elixir & Co.";
                     $message = "Hello {$name},\n\n"
-                             . "We received a request to reset your Mr.Genie Perfumes account password.\n\n"
+                             . "We received a request to reset your Elixir & Co. account password.\n\n"
                              . "Your 6-digit password reset OTP is: {$token}\n\n"
                              . "You can enter this OTP on the password reset page, or simply click the link below to reset it automatically:\n\n"
                              . "{$resetUrl}\n\n"
                              . "This OTP and link will expire in 30 minutes.\n\n"
                              . "If you didn't request this, you can safely ignore this email.\n\n"
-                             . "Thank you,\nMr.Genie Perfumes Team\nhttps://mrgenieperfumes.in";
+                             . "Thank you,\nElixir & Co. Team\nhttps://elixircoperfumes.in";
 
                     sendMail($email, $subject, $message);
                     // Note: We don't check mail result — always show generic success

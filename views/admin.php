@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Genie Admin Portal";
+$pageTitle = "Elixir & Co. Admin Portal";
 require_once __DIR__ . '/../config/db.php';
 
 $db = getDB();
@@ -18,8 +18,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $envFile = __DIR__ . '/../config/env.php';
         if (file_exists($envFile)) {
             $env = require $envFile;
-            $adminUser = $env['admin_user'] ?? 'admin@mrgenieperfumes.in';
-            $adminPass = $env['admin_pass'] ?? 'Genie0558';
+            $adminUser = $env['admin_user'] ?? 'admin@elixircoperfumes.in';
+            $adminPass = $env['admin_pass'] ?? 'Elixir0558';
 
             if ($email === $adminUser && $password === $adminPass) {
                 $_SESSION['is_admin'] = true;
@@ -253,7 +253,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
             
             $env = require $envFile;
-            $currentAdminPass = $env['admin_pass'] ?? 'Genie0558';
+            $currentAdminPass = $env['admin_pass'] ?? 'Elixir0558';
             
             if ($oldPassword !== $currentAdminPass) {
                 setFlashMessage('error', 'The current password you entered is incorrect.');
@@ -445,7 +445,7 @@ if (!isAdmin()):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Administrator Sign-In | Genie backoffice</title>
+    <title>Administrator Sign-In | Elixir & Co. backoffice</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -554,7 +554,7 @@ if (!isAdmin()):
 <body>
 
 <div class="login-card">
-    <h1 class="logo-title">MR. GENIE</h1>
+    <h1 class="logo-title">ELIXIR & CO.</h1>
     <div class="subtitle">Backoffice Portal</div>
 
     <?php if (!empty($loginError)): ?>
@@ -566,7 +566,7 @@ if (!isAdmin()):
         
         <div class="form-group">
             <label>Master Username</label>
-            <input type="email" name="admin_email" required placeholder="admin@mrgenieperfumes.in" autocomplete="off">
+            <input type="email" name="admin_email" required placeholder="admin@elixircoperfumes.in" autocomplete="off">
         </div>
 
         <div class="form-group">
@@ -636,7 +636,7 @@ if ($activeTab === 'messages') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Master Control Console | Mr.genieperfumes</title>
+    <title>Master Control Console | Elixir & Co.</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -1070,7 +1070,7 @@ if ($activeTab === 'messages') {
 <!-- Side Panel Menu -->
 <aside class="sidebar">
     <div class="sidebar-brand">
-        <h2>MR. GENIE</h2>
+        <h2>ELIXIR & CO.</h2>
         <span>Backoffice Console</span>
     </div>
     
@@ -1257,7 +1257,7 @@ if ($activeTab === 'messages') {
                                     if (strlen($cleanMobile) === 10) {
                                         $cleanMobile = '91' . $cleanMobile;
                                     }
-                                    $waMsg = "Hello " . $o['billing_name'] . ", this is Mr.genieperfumes regarding your order " . $o['order_id'] . ". We would like to confirm your order details and delivery timeline.";
+                                    $waMsg = "Hello " . $o['billing_name'] . ", this is Elixir & Co. regarding your order " . $o['order_id'] . ". We would like to confirm your order details and delivery timeline.";
                                     $waLink = "https://wa.me/" . $cleanMobile . "?text=" . urlencode($waMsg);
                                     ?>
                                     <a href="<?= $waLink ?>" target="_blank" class="btn-admin" style="font-size: 0.7rem; padding: 6px 12px; border: 1px solid #25D366; background: transparent; color: #25D366; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-brands fa-whatsapp" style="font-size: 0.95rem;"></i> Confirm via WhatsApp</a>

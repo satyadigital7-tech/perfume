@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "Track Scent Order";
-$metaDesc = "Track the real-time fulfillment status of your luxury fragrance shipment from Mr.genieperfumes.";
+$metaDesc = "Track the real-time fulfillment status of your luxury fragrance shipment from Elixir & Co.";
 include __DIR__ . '/../includes/header.php';
 
 $db = getDB();

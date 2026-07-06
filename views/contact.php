@@ -1,6 +1,6 @@
 <?php
-$pageTitle = "Contact Mr.genieperfumes";
-$metaDesc = "Reach out to Mr.genieperfumes for order inquiries, fragrance selections, or private consultation requests.";
+$pageTitle = "Contact Elixir & Co.";
+$metaDesc = "Reach out to Elixir & Co. for order inquiries, fragrance selections, or private consultation requests.";
 require_once __DIR__ . '/../config/db.php';
 
 $db = getDB();

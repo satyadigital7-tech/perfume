@@ -213,7 +213,7 @@ switch ($action) {
                     'key' => 'rzp_live_T87Kc4oZWZyu2R',
                     'amount' => $amountInPaise,
                     'currency' => 'INR',
-                    'name' => 'Mr.Genie Perfumes',
+                    'name' => 'Elixir & Co.',
                     'description' => 'Luxury Fragrances Order ' . $orderIdStr,
                     'image' => BASE_URL . '/assets/images/LOGO.png',
                     'razorpay_order_id' => $razorpayOrderId,
@@ -230,7 +230,7 @@ switch ($action) {
             }
 
             // 4. Construct WhatsApp Pre-Filled Message
-            $waMessage = "Hello Mr.genieperfumes,\n\n";
+            $waMessage = "Hello Elixir & Co.,\n\n";
             $waMessage .= "I would like to place an order.\n\n";
             $waMessage .= "Order ID: " . $orderIdStr . "\n\n";
             $waMessage .= "Customer Name: " . $fullName . "\n";
@@ -255,11 +255,11 @@ switch ($action) {
 
             // Construct and send email confirmation (to customer and admin)
             $emailSubject = "Order Confirmed - " . $orderIdStr;
-            $emailMsg = "ORDER CONFIRMED - Mr.Genie Perfumes\n";
+            $emailMsg = "ORDER CONFIRMED - Elixir & Co.\n";
             $emailMsg .= "Receipt for Order: " . $orderIdStr . "\n";
             $emailMsg .= "---------------------------------------------\n";
             $emailMsg .= "Dear " . $fullName . ",\n\n";
-            $emailMsg .= "Thank you for your luxury fragrance order with Mr.Genie Perfumes!\n";
+            $emailMsg .= "Thank you for your luxury fragrance order with Elixir & Co.!\n";
             $emailMsg .= "Your transaction was processed successfully. Below is your detailed invoice summary:\n\n";
             $emailMsg .= "ITEMS PLACED:\n";
             
@@ -281,13 +281,13 @@ switch ($action) {
             $emailMsg .= $address . ", " . $city . ", " . $state . " - " . $pincode . "\n";
             $emailMsg .= "Mobile: " . $mobile . "\n\n";
             $emailMsg .= "Thank you for shopping with us!\n";
-            $emailMsg .= "- Mr.Genie Perfumes";
+            $emailMsg .= "- Elixir & Co.";
 
             // Send to customer
             sendMail($email, $emailSubject, $emailMsg);
 
             // Send copy to admin
-            sendMail('notification@mrgenieperfumes.in', "New Order Placed - " . $orderIdStr, $emailMsg);
+            sendMail('notification@elixircoperfumes.in', "New Order Placed - " . $orderIdStr, $emailMsg);
 
             // Clear session data relating to cart
             $_SESSION['cart'] = [];
@@ -352,11 +352,11 @@ switch ($action) {
                 
                 // Send confirmation emails
                 $emailSubject = "Order Confirmed - " . $orderIdStr;
-                $emailMsg = "ORDER CONFIRMED - Mr.Genie Perfumes\n";
+                $emailMsg = "ORDER CONFIRMED - Elixir & Co.\n";
                 $emailMsg .= "Receipt for Order: " . $orderIdStr . "\n";
                 $emailMsg .= "---------------------------------------------\n";
                 $emailMsg .= "Dear " . $order['billing_name'] . ",\n\n";
-                $emailMsg .= "Thank you for your luxury fragrance order with Mr.Genie Perfumes!\n";
+                $emailMsg .= "Thank you for your luxury fragrance order with Elixir & Co.!\n";
                 $emailMsg .= "Your transaction was processed successfully. Below is your detailed invoice summary:\n\n";
                 $emailMsg .= "ITEMS PLACED:\n";
                 
@@ -380,10 +380,10 @@ switch ($action) {
                 $emailMsg .= "Payment Mode: Razorpay (Paid)\n";
                 $emailMsg .= "Transaction ID: " . $razorpayPaymentId . "\n\n";
                 $emailMsg .= "Thank you for shopping with us!\n";
-                $emailMsg .= "- Mr.Genie Perfumes";
+                $emailMsg .= "- Elixir & Co.";
                 
                 sendMail($order['billing_email'], $emailSubject, $emailMsg);
-                sendMail('notification@mrgenieperfumes.in', "New Paid Order - " . $orderIdStr, $emailMsg);
+                sendMail('notification@elixircoperfumes.in', "New Paid Order - " . $orderIdStr, $emailMsg);
                 
                 // Clear session data relating to cart
                 $_SESSION['cart'] = [];

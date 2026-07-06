@@ -1,6 +1,6 @@
 <?php
-$pageTitle = "Order Confirmed - Mr.Genie Perfumes";
-$metaDesc = "Thank you for your order! Your purchase from Mr.Genie Perfumes has been placed successfully.";
+$pageTitle = "Order Confirmed - Elixir & Co.";
+$metaDesc = "Thank you for your order! Your purchase from Elixir & Co. has been placed successfully.";
 include __DIR__ . '/../includes/header.php';
 
 $db = getDB();

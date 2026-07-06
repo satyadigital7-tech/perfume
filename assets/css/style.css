@@ -178,8 +178,11 @@ img {
 .logo-img {
     height: 60px !important;
     width: auto !important;
-    object-fit: contain;
-    display: block;
+    max-width: 100% !important;
+    object-fit: contain !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
     transition: opacity 0.3s ease;
 }
 

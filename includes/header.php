@@ -32,65 +32,44 @@
 </head>
 <body>
 
-<!-- Header / Navigation -->
-<header class="main-header">
+<!-- Header / Navigation --><header class="main-header">
     <div class="header-top">
-        <div class="header-container">
+        <div class="header-container" style="justify-content: center;">
             <div class="header-promo">
-                <span>Free Express Shipping on Orders Over ₹<?= number_format((float)getSetting('shipping_free_threshold', '1500.00')) ?> | Premium Packaging</span>
-            </div>
-            <div class="header-top-links">
-                <a href="<?= BASE_URL ?>/order-tracking"><i class="fa-solid fa-truck"></i> Track Order</a>
-                <?php if (isAdmin()): ?>
-                    <a href="<?= BASE_URL ?>/admin" style="color: var(--color-gold); font-weight: 600;"><i class="fa-solid fa-user-gear"></i> Admin Panel</a>
-                    <a href="<?= BASE_URL ?>/account?logout=1"><i class="fa-solid fa-sign-out-alt"></i> Logout</a>
-                <?php elseif (isLoggedIn()): ?>
-                    <a href="<?= BASE_URL ?>/account"><i class="fa-solid fa-user"></i> My Account</a>
-                    <a href="<?= BASE_URL ?>/account?logout=1"><i class="fa-solid fa-sign-out-alt"></i> Logout</a>
-                <?php else: ?>
-                    <a href="<?= BASE_URL ?>/account" class="login-trigger"><i class="fa-solid fa-user-lock"></i> Login / Register</a>
-                <?php endif; ?>
+                <span><i class="fa-solid fa-truck" style="margin-right: 8px; color: var(--color-gold);"></i> FREE SHIPPING ON ORDERS ABOVE ₹999</span>
             </div>
         </div>
     </div>
 
     <div class="header-middle">
-        <div class="header-container">
-            <!-- Mobile Menu Toggle Button -->
-            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open Menu">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-
-            <!-- Brand Logo -->
+        <div class="header-container header-single-row">
+            <!-- Left: Brand Logo -->
             <a href="<?= BASE_URL ?>/" class="brand-logo">
-                <img src="<?= BASE_URL ?>/assets/images/logo.jpeg" alt="Elixir & Co. Logo" class="logo-img">
+                <span class="logo-main">ELIXIR &amp; CO.</span>
+                <span class="logo-sub">LUXURY PERFUMES</span>
             </a>
 
-            <!-- Live Search Bar -->
-            <div class="search-wrapper">
-                <form action="<?= BASE_URL ?>/search" method="GET" class="search-form">
-                    <input type="text" name="q" id="search-input" placeholder="Search brands, scents, woody, floral..." autocomplete="off" value="<?= e($_GET['q'] ?? '') ?>">
-                    <button type="submit" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
-                <!-- Autocomplete suggestions dropdown -->
-                <div id="search-suggestions" class="search-suggestions-dropdown" style="display: none;"></div>
-            </div>
+            <!-- Middle: Navigation Links -->
+            <nav class="main-nav-inline">
+                <ul class="nav-links">
+                    <li><a href="<?= BASE_URL ?>/" class="nav-link-item <?= $route === '' ? 'active' : '' ?>">HOME</a></li>
+                    <li><a href="<?= BASE_URL ?>/search" class="nav-link-item <?= $route === 'search' ? 'active' : '' ?>">SHOP</a></li>
+                    <li><a href="<?= BASE_URL ?>/bestsellers" class="nav-link-item <?= $route === 'bestsellers' ? 'active' : '' ?>">BESTSELLERS</a></li>
+                    <li><a href="<?= BASE_URL ?>/about" class="nav-link-item <?= $route === 'about' ? 'active' : '' ?>">OUR STORY</a></li>
+                    <li><a href="<?= BASE_URL ?>/contact" class="nav-link-item <?= $route === 'contact' ? 'active' : '' ?>">CONTACT</a></li>
+                </ul>
+            </nav>
 
-            <!-- Action Icons (Wishlist, Cart) -->
+            <!-- Right: Action Icons (Search Toggle, Account, Cart) -->
             <div class="header-actions">
-                <!-- Wishlist -->
-                <a href="<?= BASE_URL ?>/wishlist" class="header-action-btn" aria-label="Wishlist">
-                    <i class="fa-regular fa-heart"></i>
-                    <?php 
-                    $wishCount = 0;
-                    if (isLoggedIn()) {
-                        $db = getDB();
-                        $wStmt = $db->prepare("SELECT COUNT(*) FROM wishlists WHERE user_id = ?");
-                        $wStmt->execute([$_SESSION['user_id']]);
-                        $wishCount = $wStmt->fetchColumn();
-                    }
-                    ?>
-                    <span class="badge" id="wishlist-count" style="<?= $wishCount > 0 ? '' : 'display: none;' ?>"><?= $wishCount ?></span>
+                <!-- Search Toggle Icon -->
+                <button class="header-action-btn search-toggle" id="search-toggle" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                
+                <!-- Account Profile -->
+                <a href="<?= BASE_URL ?>/account" class="header-action-btn" aria-label="Account">
+                    <i class="fa-regular fa-user"></i>
                 </a>
 
                 <!-- Cart -->
@@ -104,24 +83,48 @@
                         }
                     }
                     ?>
-                    <span class="badge" id="cart-count" style="<?= $cartCount > 0 ? '' : 'display: none;' ?>"><?= $cartCount ?></span>
+                    <span class="badge" id="cart-count"><?= $cartCount ?></span>
                 </a>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open Menu" style="margin-left: 10px;">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
         </div>
     </div>
 
-    <!-- Main Navigation Menu -->
-    <nav class="main-nav">
+    <!-- Hidden Search Bar Slide-down overlay -->
+    <div class="header-search-overlay" id="header-search-overlay" style="display: none;">
         <div class="header-container">
-            <ul class="nav-links">
-                <li><a href="<?= BASE_URL ?>/" class="nav-link-item">Home</a></li>
-                <li><a href="<?= BASE_URL ?>/search" class="nav-link-item">Shop</a></li>
-                <li><a href="<?= BASE_URL ?>/bestsellers" class="nav-link-item">Bestsellers</a></li>
-                <li><a href="<?= BASE_URL ?>/about" class="nav-link-item">Our Story</a></li>
-                <li><a href="<?= BASE_URL ?>/contact" class="nav-link-item">Contact</a></li>
-            </ul>
+            <form action="<?= BASE_URL ?>/search" method="GET" class="search-form">
+                <input type="text" name="q" id="search-input" placeholder="Search brands, scents, woody, floral..." autocomplete="off" value="<?= e($_GET['q'] ?? '') ?>">
+                <button type="submit" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div id="search-suggestions" class="search-suggestions-dropdown" style="display: none;"></div>
         </div>
-    </nav>
+    </div>
+
+    <!-- Simple JavaScript for Toggle Search Bar -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var searchToggle = document.getElementById('search-toggle');
+            var searchOverlay = document.getElementById('header-search-overlay');
+            var searchInput = document.getElementById('search-input');
+
+            if (searchToggle && searchOverlay) {
+                searchToggle.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    if (searchOverlay.style.display === 'none') {
+                        searchOverlay.style.display = 'block';
+                        if (searchInput) searchInput.focus();
+                    } else {
+                        searchOverlay.style.display = 'none';
+                    }
+                });
+            }
+        });
+    </script>
 
     <!-- Mobile Nav Drawer -->
     <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>

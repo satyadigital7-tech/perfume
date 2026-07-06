@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS perfume_db;
-USE perfume_db;
+CREATE DATABASE IF NOT EXISTS elixir;
+USE elixir;
 
 -- Users Table
 CREATE TABLE IF NOT EXISTS users (

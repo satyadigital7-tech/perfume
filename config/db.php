@@ -31,7 +31,7 @@ function getDB() {
                 $pass = $env['db_pass'];
             } else {
                 // Local XAMPP credentials
-                $dsn  = "mysql:host=localhost;dbname=perfume_db;charset=utf8";
+                $dsn  = "mysql:host=localhost;dbname=elixir;charset=utf8";
                 $user = "root";
                 $pass = "";
             }
@@ -47,7 +47,7 @@ function getDB() {
                 die("<div style='font-family:sans-serif;padding:20px;background:#fff3cd;border:1px solid #ffc107;border-radius:8px;margin:20px'>
                     <h3 style='color:#856404'>⚠️ Local Database Error</h3>
                     <p><strong>Fix:</strong> Open XAMPP Control Panel and click <strong>Start</strong> next to <strong>MySQL</strong>.</p>
-                    <p>Then visit <a href='http://localhost/phpmyadmin'>phpMyAdmin</a> and create database: <code>perfume_db</code></p>
+                    <p>Then visit <a href='http://localhost/phpmyadmin'>phpMyAdmin</a> and create database: <code>elixir</code></p>
                     <p>Then run: <a href='http://localhost/Perfume/database/seed.php'>seed.php</a> to populate data.</p>
                     <small style='color:#666'>Error: " . htmlspecialchars($e->getMessage()) . "</small>
                 </div>");

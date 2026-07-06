@@ -215,7 +215,7 @@ switch ($action) {
                     'currency' => 'INR',
                     'name' => 'Elixir & Co.',
                     'description' => 'Luxury Fragrances Order ' . $orderIdStr,
-                    'image' => BASE_URL . '/assets/images/LOGO.png',
+                    'image' => BASE_URL . '/assets/images/LOGO.svg',
                     'razorpay_order_id' => $razorpayOrderId,
                     'prefill' => [
                         'name' => $fullName,

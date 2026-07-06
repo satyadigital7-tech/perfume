@@ -258,7 +258,7 @@ include __DIR__ . '/../includes/header.php';
         <!-- Logo -->
         <div class="reset-logo">
             <a href="<?= BASE_URL ?>">
-                <img src="<?= BASE_URL ?>/assets/images/LOGO.png" alt="Elixir & Co.">
+                <img src="<?= BASE_URL ?>/assets/images/LOGO.svg" alt="Elixir & Co.">
             </a>
         </div>
 

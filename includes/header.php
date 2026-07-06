@@ -11,12 +11,12 @@
     <meta property="og:title" content="<?= isset($pageTitle) ? e($pageTitle) . " | Elixir & Co." : "Elixir & Co. | Luxury Perfumes" ?>">
     <meta property="og:description" content="<?= isset($metaDesc) ? e($metaDesc) : "Discover the art of luxury fragrance. Premium perfumes for men and women." ?>">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="<?= BASE_URL ?>/assets/images/LOGO.png">
+    <meta property="og:image" content="<?= BASE_URL ?>/assets/images/LOGO.svg">
 
     <!-- Favicon — All Browsers & Devices -->
-    <link rel="icon" type="image/png" href="<?= BASE_URL ?>/assets/images/LOGO.png">
-    <link rel="shortcut icon" type="image/png" href="<?= BASE_URL ?>/assets/images/LOGO.png">
-    <link rel="apple-touch-icon" href="<?= BASE_URL ?>/assets/images/LOGO.png">
+    <link rel="icon" type="image/svg+xml" href="<?= BASE_URL ?>/assets/images/LOGO.svg">
+    <link rel="shortcut icon" type="image/svg+xml" href="<?= BASE_URL ?>/assets/images/LOGO.svg">
+    <link rel="apple-touch-icon" href="<?= BASE_URL ?>/assets/images/LOGO.svg">
     <meta name="theme-color" content="#c8a96e">
 
 
@@ -63,7 +63,7 @@
 
             <!-- Brand Logo -->
             <a href="<?= BASE_URL ?>/" class="brand-logo">
-                <img src="<?= BASE_URL ?>/assets/images/LOGO.png" alt="Elixir & Co. Logo" class="logo-img">
+                <img src="<?= BASE_URL ?>/assets/images/LOGO.svg" alt="Elixir & Co. Logo" class="logo-img">
             </a>
 
             <!-- Live Search Bar -->

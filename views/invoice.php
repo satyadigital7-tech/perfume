@@ -35,7 +35,7 @@ $items = $db->prepare("SELECT * FROM order_items WHERE order_id = ?");
 $items->execute([$id]);
 $orderItems = $items->fetchAll();
 
-$logoUrl = BASE_URL . '/assets/images/LOGO.png';
+$logoUrl = BASE_URL . '/assets/images/LOGO.svg';
 $invoiceDate = date('d M Y', strtotime($order['created_at']));
 $invoiceNum  = 'INV-' . strtoupper($order['order_id'] ?? str_pad($order['id'], 6, '0', STR_PAD_LEFT));
 ?>

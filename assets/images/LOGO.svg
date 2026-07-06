@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="100%" height="100%">
+    <!-- Premium Crest/Monogram Icon (Left) -->
+    <g transform="translate(10, 10)">
+        <!-- Outer Circle -->
+        <circle cx="40" cy="40" r="38" fill="none" stroke="#c8a96e" stroke-width="2"/>
+        <circle cx="40" cy="40" r="34" fill="none" stroke="#c8a96e" stroke-width="0.5" stroke-dasharray="2,2"/>
+        
+        <!-- Elegant "E" Monogram -->
+        <path d="M 32 26 H 50" stroke="#c8a96e" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M 32 40 H 46" stroke="#c8a96e" stroke-width="2" stroke-linecap="round"/>
+        <path d="M 32 54 H 50" stroke="#c8a96e" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M 34 26 V 54" stroke="#c8a96e" stroke-width="3" stroke-linecap="round"/>
+        
+        <!-- Tiny Spark/Star -->
+        <path d="M 40 16 L 42 20 L 46 22 L 42 24 L 40 28 L 38 24 L 34 22 L 38 20 Z" fill="#c8a96e"/>
+    </g>
+
+    <!-- Typography (Right) -->
+    <!-- "ELIXIR & CO." Brand Name -->
+    <text x="110" y="48" font-family="'Playfair Display', 'Georgia', serif" font-size="28" font-weight="700" fill="#c8a96e" letter-spacing="3">ELIXIR &amp; CO.</text>
+    <!-- "LUXURY PERFUMES" Subtitle -->
+    <text x="112" y="68" font-family="'Poppins', 'Arial', sans-serif" font-size="10" font-weight="500" fill="#c8a96e" letter-spacing="5" opacity="0.9">LUXURY PERFUMES</text>
+</svg>

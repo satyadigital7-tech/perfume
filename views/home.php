@@ -8,8 +8,8 @@ include __DIR__ . '/../includes/header.php';
     <!-- Hero Slideshow Section -->
     <section class="elixir-hero-slider" id="heroSlider">
 
-        <!-- Slide 1 -->
-        <div class="hero-slide active" style="background-image: url('<?= BASE_URL ?>/assets/images/black_orchid.jpg');">
+        <!-- Slide 1: Candy Dream -->
+        <div class="hero-slide active" style="background-image: url('<?= BASE_URL ?>/assets/images/hero/1 (1).jpeg');">
             <div class="hero-slide-overlay"></div>
             <div class="hero-slide-content">
                 <div class="elixir-hero-brand">Elixir &amp; Co.</div>
@@ -23,32 +23,47 @@ include __DIR__ . '/../includes/header.php';
             </div>
         </div>
 
-        <!-- Slide 2 -->
-        <div class="hero-slide" style="background-image: url('<?= BASE_URL ?>/assets/images/creed_aventus.jpg');">
+        <!-- Slide 2: Villain -->
+        <div class="hero-slide" style="background-image: url('<?= BASE_URL ?>/assets/images/hero/1 (2).jpeg');">
             <div class="hero-slide-overlay"></div>
             <div class="hero-slide-content">
                 <div class="elixir-hero-brand">Elixir &amp; Co.</div>
                 <div class="elixir-hero-separator"><i class="fa-solid fa-star-of-life"></i></div>
                 <h1 class="elixir-hero-tagline">The art of<br>fine fragrance</h1>
-                <p class="elixir-hero-desc">Amber Noir — a bold statement of power, warmth, and undeniable confidence.</p>
+                <p class="elixir-hero-desc">Bold, dark, and irresistible — a scent that commands every room you enter.</p>
                 <div class="elixir-hero-ctas">
-                    <a href="<?= BASE_URL ?>/product/2" class="elixir-btn-gold">Shop Amber Noir</a>
+                    <a href="<?= BASE_URL ?>/search" class="elixir-btn-gold">Shop Now</a>
                     <a href="<?= BASE_URL ?>/bestsellers" class="elixir-btn-outline">Bestsellers</a>
                 </div>
             </div>
         </div>
 
-        <!-- Slide 3 -->
-        <div class="hero-slide" style="background-image: url('<?= BASE_URL ?>/assets/images/blog_craftsmanship.jpg');">
+        <!-- Slide 3: 1M -->
+        <div class="hero-slide" style="background-image: url('<?= BASE_URL ?>/assets/images/hero/1 (3).jpeg');">
+            <div class="hero-slide-overlay"></div>
+            <div class="hero-slide-content">
+                <div class="elixir-hero-brand">Elixir &amp; Co.</div>
+                <div class="elixir-hero-separator"><i class="fa-solid fa-star-of-life"></i></div>
+                <h1 class="elixir-hero-tagline">Signature scents<br>for every moment</h1>
+                <p class="elixir-hero-desc">Discover premium fragrances crafted for timeless elegance and lasting presence.</p>
+                <div class="elixir-hero-ctas">
+                    <a href="<?= BASE_URL ?>/search" class="elixir-btn-gold">Explore All</a>
+                    <a href="<?= BASE_URL ?>/about" class="elixir-btn-outline">Our Story</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Blue Sky -->
+        <div class="hero-slide" style="background-image: url('<?= BASE_URL ?>/assets/images/hero/1 (4).jpeg');">
             <div class="hero-slide-overlay"></div>
             <div class="hero-slide-content">
                 <div class="elixir-hero-brand">Elixir &amp; Co.</div>
                 <div class="elixir-hero-separator"><i class="fa-solid fa-star-of-life"></i></div>
                 <h1 class="elixir-hero-tagline">Scents that tell<br>your story</h1>
-                <p class="elixir-hero-desc">Rose Elixir — soft floral luxury with notes of Rose, Jasmine, and White Musk.</p>
+                <p class="elixir-hero-desc">Fresh, vibrant, and limitless — wear your confidence every single day.</p>
                 <div class="elixir-hero-ctas">
-                    <a href="<?= BASE_URL ?>/product/1" class="elixir-btn-gold">Shop Rose Elixir</a>
-                    <a href="<?= BASE_URL ?>/search" class="elixir-btn-outline">All Fragrances</a>
+                    <a href="<?= BASE_URL ?>/search" class="elixir-btn-gold">Shop Fragrances</a>
+                    <a href="<?= BASE_URL ?>/search?gender=unisex" class="elixir-btn-outline">All Collections</a>
                 </div>
             </div>
         </div>
@@ -66,6 +81,7 @@ include __DIR__ . '/../includes/header.php';
             <button class="hero-dot active" data-slide="0"></button>
             <button class="hero-dot" data-slide="1"></button>
             <button class="hero-dot" data-slide="2"></button>
+            <button class="hero-dot" data-slide="3"></button>
         </div>
     </section>
 
@@ -106,6 +122,7 @@ include __DIR__ . '/../includes/header.php';
         autoPlay();
     })();
     </script>
+
 
     <!-- Our Collection Section -->
     <section class="elixir-collection">

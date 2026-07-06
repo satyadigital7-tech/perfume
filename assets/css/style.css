@@ -4147,4 +4147,359 @@ img {
     }
 }
 
+/* ==========================================
+   SHOP PAGE STYLES
+   ========================================== */
+
+.elixir-shop-hero {
+    background: #0d0d0d;
+    padding: 60px 0;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.elixir-shop-hero .hero-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.elixir-breadcrumbs {
+    font-size: 0.8rem;
+    color: #888888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.elixir-breadcrumbs a {
+    color: var(--color-gold, #c8a96e);
+}
+
+.elixir-breadcrumbs .active {
+    color: #ffffff;
+}
+
+.elixir-shop-body-section {
+    background-color: #faf8f5;
+    padding: 80px 0;
+    color: #222222;
+}
+
+.elixir-shop-grid {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 45px;
+    align-items: flex-start;
+}
+
+.elixir-shop-sidebar {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+    border: 1px solid #eae5d8;
+}
+
+.elixir-shop-sidebar .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eae5d8;
+}
+
+.elixir-shop-sidebar .sidebar-header h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.elixir-shop-sidebar .clear-filters-btn {
+    font-size: 0.75rem;
+    color: var(--color-gold, #c8a96e);
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.elixir-shop-sidebar .filter-group {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f4f0e6;
+}
+
+.elixir-shop-sidebar .filter-group-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.elixir-shop-sidebar .filter-group-title i {
+    font-size: 0.7rem;
+    color: #888888;
+}
+
+/* Custom Checkboxes */
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    color: #555555;
+    user-select: none;
+    line-height: 20px;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #fafaf9;
+    border: 1px solid #eae5d8;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+    border-color: var(--color-gold, #c8a96e);
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    background-color: var(--color-gold, #c8a96e);
+    border-color: var(--color-gold, #c8a96e);
+}
+
+.checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark::after {
+    display: block;
+}
+
+.checkbox-container .checkmark::after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Price Range Slider label */
+.price-slider-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #222222;
+}
+
+.elixir-btn-reset-filters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 1px solid var(--color-gold, #c8a96e);
+    background: transparent;
+    color: #111111;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 12px;
+    width: 100%;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.elixir-btn-reset-filters:hover {
+    background-color: var(--color-gold, #c8a96e);
+    color: #ffffff;
+}
+
+/* Shop Results list */
+.elixir-shop-results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.elixir-shop-results-header .results-count {
+    font-size: 0.9rem;
+    color: #666666;
+}
+
+.elixir-shop-results-header .results-count strong {
+    color: #111111;
+}
+
+.elixir-shop-results-header select {
+    padding: 8px 16px;
+    border: 1px solid #eae5d8;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #222222;
+}
+
+.elixir-shop-products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Card custom sizes options */
+.elixir-shop-size-options {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.elixir-shop-size-options .size-btn {
+    border: 1px solid #eae5d8;
+    background: #ffffff;
+    color: #666666;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.elixir-shop-size-options .size-btn.active,
+.elixir-shop-size-options .size-btn:hover {
+    border-color: #000000;
+    color: #000000;
+    background-color: #fafaf9;
+}
+
+.elixir-shop-card-actions {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.elixir-btn-add-cart {
+    flex-grow: 1;
+    background: #000000;
+    color: #ffffff;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.elixir-btn-add-cart:hover {
+    background-color: var(--color-gold, #c8a96e);
+}
+
+.elixir-shop-wishlist-btn {
+    border: 1px solid #eae5d8;
+    background: #ffffff;
+    color: #888888;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.elixir-shop-wishlist-btn:hover,
+.elixir-shop-wishlist-btn.active {
+    border-color: #ff4d4f;
+    color: #ff4d4f;
+    background-color: #fff1f0;
+}
+
+/* Pagination */
+.elixir-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 50px;
+}
+
+.elixir-pagination .page-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #eae5d8;
+    border-radius: 3px;
+    color: #555555;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+}
+
+.elixir-pagination .page-link:hover,
+.elixir-pagination .page-link.active {
+    border-color: #000000;
+    color: #000000;
+    background-color: #fafaf9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .elixir-shop-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .elixir-shop-products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .elixir-shop-products-grid {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+}
+
 

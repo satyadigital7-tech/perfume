@@ -73,8 +73,8 @@
 .elixir-hero-slider {
     position: relative;
     width: 100%;
-    height: 90vh;
-    min-height: 580px;
+    height: 65vh;
+    min-height: 480px;
     overflow: hidden;
     background: #000;
 }
@@ -249,7 +249,7 @@
 }
 
 @media (max-width: 768px) {
-    .elixir-hero-slider { height: 75vh; min-height: 480px; }
+    .elixir-hero-slider { height: 60vh; min-height: 420px; }
     .hero-slide-content { padding: 0 5vw; }
     .hero-prev { left: 12px; }
     .hero-next { right: 12px; }

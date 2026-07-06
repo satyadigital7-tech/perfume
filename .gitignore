@@ -1,0 +1,16 @@
+# Credentials - never commit these
+config/env.php
+config/mail.php
+
+# Logs
+otp_log.txt
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Deployment scripts & temp archives
+deploy.ps1
+deploy_temp.zip
+

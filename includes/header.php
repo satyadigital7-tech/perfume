@@ -45,8 +45,7 @@
         <div class="header-container header-single-row">
             <!-- Left: Brand Logo -->
             <a href="<?= BASE_URL ?>/" class="brand-logo">
-                <span class="logo-main">ELIXIR &amp; CO.</span>
-                <span class="logo-sub">LUXURY PERFUMES</span>
+                <img src="<?= BASE_URL ?>/assets/images/logo.jpeg" alt="Elixir & Co." class="header-logo-img">
             </a>
 
             <!-- Middle: Navigation Links -->

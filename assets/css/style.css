@@ -179,6 +179,22 @@ img {
     text-decoration: none;
 }
 
+/* Header image logo */
+.header-logo-img {
+    height: 55px !important;
+    width: auto !important;
+    max-width: 220px !important;
+    object-fit: contain !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    transition: opacity 0.3s ease;
+}
+
+.brand-logo:hover .header-logo-img {
+    opacity: 0.85;
+}
+
 .brand-logo .logo-main {
     font-family: 'Playfair Display', serif;
     font-size: 1.7rem;
@@ -3113,6 +3129,23 @@ img {
     color: var(--color-white);
     letter-spacing: 2px;
     margin-bottom: 20px;
+}
+
+/* Footer logo image */
+.footer-logo-img {
+    height: 55px !important;
+    width: auto !important;
+    max-width: 200px !important;
+    object-fit: contain !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    margin-bottom: 18px;
+    transition: opacity 0.3s ease;
+}
+
+.footer-logo:hover .footer-logo-img {
+    opacity: 0.85;
 }
 
 .brand-pitch {

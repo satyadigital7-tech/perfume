@@ -20,7 +20,7 @@
             <!-- Brand Info Column -->
             <div class="footer-col brand-info">
                 <a href="<?= BASE_URL ?>/" class="footer-logo">
-                    <img src="<?= BASE_URL ?>/assets/images/logo.jpeg" alt="Elixir & Co." style="max-height: 50px !important; width: auto !important; object-fit: contain !important; margin-bottom: 20px !important; display: block !important; visibility: visible !important; opacity: 1 !important;">
+                    <img src="<?= BASE_URL ?>/assets/images/logo.jpeg" alt="Elixir & Co." class="footer-logo-img">
                 </a>
                 <p class="brand-pitch">Curating high-end luxury fragrances for men and women. Bringing you authentic signature scents designed for timeless beauty, elegance, and supreme confidence.</p>
                 <div class="footer-socials">

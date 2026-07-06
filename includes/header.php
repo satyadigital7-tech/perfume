@@ -32,6 +32,33 @@
 </head>
 <body>
 
+<!-- ===== PRELOADER ===== -->
+<div id="elixir-preloader">
+    <div class="preloader-inner">
+        <div class="preloader-logo">ÉLIXIR</div>
+        <div class="preloader-tagline">& CO.</div>
+        <div class="preloader-bar"><div class="preloader-progress"></div></div>
+    </div>
+</div>
+<script>
+(function() {
+    function hidePreloader() {
+        var p = document.getElementById('elixir-preloader');
+        if (p) {
+            setTimeout(function() {
+                p.classList.add('hide');
+                setTimeout(function() { p.style.display = 'none'; }, 750);
+            }, 1900);
+        }
+    }
+    if (document.readyState === 'complete') {
+        hidePreloader();
+    } else {
+        window.addEventListener('load', hidePreloader);
+    }
+})();
+</script>
+
 <!-- Header / Navigation --><header class="main-header">
     <div class="header-top">
         <div class="header-container" style="justify-content: center;">

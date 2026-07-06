@@ -19,7 +19,9 @@
         <div class="footer-container footer-grid">
             <!-- Brand Info Column -->
             <div class="footer-col brand-info">
-                <h3>Elixir & Co.</h3>
+                <a href="<?= BASE_URL ?>/" class="footer-logo">
+                    <img src="<?= BASE_URL ?>/assets/images/logo.jpeg" alt="Elixir & Co." style="max-height: 50px; width: auto; object-fit: contain; margin-bottom: 20px; display: block;">
+                </a>
                 <p class="brand-pitch">Curating high-end luxury fragrances for men and women. Bringing you authentic signature scents designed for timeless beauty, elegance, and supreme confidence.</p>
                 <div class="footer-socials">
                     <a href="#" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>

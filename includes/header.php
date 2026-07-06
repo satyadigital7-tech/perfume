@@ -63,7 +63,7 @@
 
             <!-- Brand Logo -->
             <a href="<?= BASE_URL ?>/" class="brand-logo">
-                <img src="<?= BASE_URL ?>/assets/images/LOGO.svg" alt="Elixir & Co. Logo" class="logo-img">
+                <img src="<?= BASE_URL ?>/assets/images/logo.jpeg" alt="Elixir & Co. Logo" class="logo-img">
             </a>
 
             <!-- Live Search Bar -->

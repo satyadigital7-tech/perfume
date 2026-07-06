@@ -3201,6 +3201,12 @@ img {
     font-family: 'Poppins', sans-serif;
 }
 
+.elixir-home .header-container {
+    max-width: 1440px !important;
+    width: 95% !important;
+    padding: 0 30px !important;
+}
+
 /* 1. Hero Section */
 .elixir-hero {
     background: #0d0d0d;

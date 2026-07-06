@@ -115,9 +115,9 @@
         <div class="header-container">
             <ul class="nav-links">
                 <li><a href="<?= BASE_URL ?>/" class="nav-link-item">Home</a></li>
-                <li><a href="<?= BASE_URL ?>/men" class="nav-link-item">Men</a></li>
-                <li><a href="<?= BASE_URL ?>/women" class="nav-link-item">Women</a></li>
-                <li><a href="<?= BASE_URL ?>/about" class="nav-link-item">About Us</a></li>
+                <li><a href="<?= BASE_URL ?>/search" class="nav-link-item">Shop</a></li>
+                <li><a href="<?= BASE_URL ?>/bestsellers" class="nav-link-item">Bestsellers</a></li>
+                <li><a href="<?= BASE_URL ?>/about" class="nav-link-item">Our Story</a></li>
                 <li><a href="<?= BASE_URL ?>/contact" class="nav-link-item">Contact</a></li>
             </ul>
         </div>
@@ -135,9 +135,9 @@
         <div class="mobile-nav-body">
             <ul class="mobile-nav-links">
                 <li><a href="<?= BASE_URL ?>/">Home</a></li>
-                <li><a href="<?= BASE_URL ?>/men">Men</a></li>
-                <li><a href="<?= BASE_URL ?>/women">Women</a></li>
-                <li><a href="<?= BASE_URL ?>/about">About Us</a></li>
+                <li><a href="<?= BASE_URL ?>/search">Shop</a></li>
+                <li><a href="<?= BASE_URL ?>/bestsellers">Bestsellers</a></li>
+                <li><a href="<?= BASE_URL ?>/about">Our Story</a></li>
                 <li><a href="<?= BASE_URL ?>/contact">Contact</a></li>
             </ul>
             <div class="mobile-nav-extra">

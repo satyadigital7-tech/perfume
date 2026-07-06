@@ -25,7 +25,7 @@ if ($route === '' || $route === 'index.php') {
     $allowed_routes = [
         'men', 'women', 'search', 'gift-sets',
         'cart', 'checkout', 'account', 'wishlist', 'order-tracking', 'order-confirmation',
-        'contact', 'about', 'privacy', 'terms', 'refund', 'admin', 'invoice', 'reset-password'
+        'contact', 'about', 'privacy', 'terms', 'refund', 'admin', 'invoice', 'reset-password', 'bestsellers'
     ];
 
     if (in_array($route, $allowed_routes)) {
